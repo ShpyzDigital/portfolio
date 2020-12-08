@@ -31,8 +31,27 @@ body {
     background: #fff;
 }
 
-h1, h2, p, .divider {
+h1, h2, h3, p, .divider {
     margin: 0;
+}
+
+.projects .project-list .project.box-1 {
+    background: red;
+}
+.projects .project-list .project.box-2 {
+    background: blue;
+}
+.projects .project-list .project.box-3 {
+    background: pink;
+}
+.projects .project-list .project.box-4 {
+    background: green;
+}
+.projects .project-list .project.box-5 {
+    background: yellow;
+}
+.projects .project-list .project.box-6 {
+    background: orangered;
 }
 
 /*********** 
@@ -124,7 +143,7 @@ h1, h2, p, .divider {
 }
 
 .hero .hero-content p {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
     color: rgb(50, 41, 36);
     font-weight: bold;
 }
@@ -180,7 +199,7 @@ h1, h2, p, .divider {
 }
 
 .starter .starter-content p {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
     color: rgba(255, 255, 255, .4);
     font-weight: bold;
 }
@@ -208,4 +227,133 @@ h1, h2, p, .divider {
     font-size: 14px;
     font-weight: bold;
     color: #000;
+}
+
+
+/* ***********
+     SERVICES
+   *********** */
+
+.services {
+    height: 88vh;
+}
+
+.services .services-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-content h2 {
+    padding: 2rem 0;
+    color: #000;
+
+}
+
+.services .services-content .service-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.services .services-content .service-list .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 200px;
+    flex-basis: 23%;
+}
+
+.services .services-content .service-list .service .icon {
+    font-size: 70px;
+    color: rgb(177, 85, 9);
+}
+
+
+/* ***********
+    PROJECTS
+   *********** */
+
+.projects {
+    height: 80vh;
+    cursor: pointer;
+}
+
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .project-list .project {
+    flex-basis: 33.33%;
+    height: 250px;
+    position: relative;
+}
+
+.projects .project-list .project .project-name {
+    display: none;
+    transition: .2s;
+}
+
+.projects .project-list .project:hover .project-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 33.33%;
+    height: 250px;
+    align-items: center;
+    background-color: rgba(250, 82, 4, .3);
+    /* cursor: pointer; */
+    transition: .2s;
+}
+
+/* ***********
+    DOWNLOAD
+   *********** */
+
+.download {
+    height: 60vh;
+    background: rgb(211, 107, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download h2 {
+    padding: 2rem 0;
+}
+
+.download button {
+    background:  #fff;
+    height: 60px;
+    width: 180px;
+    border: 0px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.download button:focus {
+    outline: none;
+}
+
+.download button:hover {
+    background:  rgb(238, 207, 178);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.download button a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
 }
