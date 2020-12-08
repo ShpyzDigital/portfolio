@@ -36,22 +36,28 @@ h1, h2, h3, p, .divider {
 }
 
 .projects .project-list .project.box-1 {
-    background: red;
+    background: url(../media/project\ 6.jpg);
+    background-size: cover;
 }
 .projects .project-list .project.box-2 {
-    background: blue;
+    background: url(../media/project\ 2.jpg);
+    background-size: cover;
 }
 .projects .project-list .project.box-3 {
-    background: pink;
+    background: url(../media/project\ 3.jpg);
+    background-size: cover;
 }
 .projects .project-list .project.box-4 {
-    background: green;
+    background: url(../media/project\ 4.jpg);
+    background-size: cover;
 }
 .projects .project-list .project.box-5 {
-    background: yellow;
+    background: url(../media/project\ 5.jpg);
+    background-size: cover;
 }
 .projects .project-list .project.box-6 {
-    background: orangered;
+    background: url(../media/project\ 1.jpg);
+    background-size: cover;
 }
 
 /*********** 
@@ -136,7 +142,7 @@ h1, h2, h3, p, .divider {
 }
 
 .hero .hero-content h1 {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
     color: rgb(50, 41, 36);
     font-size: 48px;
     margin: 0;
@@ -194,7 +200,7 @@ h1, h2, h3, p, .divider {
 }
 
 .starter .starter-content h2 {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
     color: #fff;
 }
 
@@ -290,7 +296,6 @@ h1, h2, h3, p, .divider {
 .projects .project-list .project {
     flex-basis: 33.33%;
     height: 250px;
-    position: relative;
 }
 
 .projects .project-list .project .project-name {
@@ -299,7 +304,6 @@ h1, h2, h3, p, .divider {
 }
 
 .projects .project-list .project:hover .project-name {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -310,10 +314,21 @@ h1, h2, h3, p, .divider {
     flex-basis: 33.33%;
     height: 250px;
     align-items: center;
-    background-color: rgba(250, 82, 4, .3);
+    background-color: rgba(192, 68, 11, 0.3);
     /* cursor: pointer; */
     transition: .2s;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
+
+.projects .project-list .project:hover .project-name h5 {
+    color: rgba(255,245,238,.8);
+}
+
+.projects .project-list .project:hover .project-name p {
+    margin-bottom: 27px;
+}
+
 
 /* ***********
     DOWNLOAD
@@ -330,6 +345,7 @@ h1, h2, h3, p, .divider {
 
 .download h2 {
     padding: 2rem 0;
+    color: #fff;
 }
 
 .download button {
@@ -356,4 +372,138 @@ h1, h2, h3, p, .divider {
     font-weight: bold;
     color: #000;
     text-decoration: none;
+}
+
+/* ***********
+    CONTACT
+   *********** */
+
+.contacts {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts h2 {
+    padding: 2rem 0;
+    color: rgb(37, 37, 37);
+}
+
+.contacts .text {
+    padding: 2rem 0;
+    color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+.contacts a {
+    color:rgb(177, 85, 9);
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contacts .contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.contacts .contact-info .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    padding: 0 100px;
+}
+
+.contacts .contact-info .contact i {
+    padding-bottom: 30px;
+    font-size: 70px;
+    color: rgb(37, 37, 37);
+}
+
+/* ***********
+    SUBSCRIBE
+   *********** */
+
+   .subscribe {
+       height: 50vh;
+       background: rgb(75, 66, 61);
+   }
+
+   .subscribe .content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+.subscribe .content-wrapper h2 {
+    padding: 2rem 0;
+    color: rgb(236, 234, 234);
+    text-align: center;
+}
+
+.subscribe .content-wrapper form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .content-wrapper form .mail {
+    width: 430px;
+    height: 35px;
+    margin: 24px 0;
+    border-radius: 30px;
+}
+
+.subscribe .content-wrapper form .mail:focus {
+    outline: none;
+}
+
+.subscribe .content-wrapper form button {
+    background: rgb(50, 41, 36);
+    height: 60px;
+    width: 180px;
+    border: 0px;
+    border-radius: 30px;
+    transition: .5s;
+    color: burlywood;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subscribe .content-wrapper form button:hover {
+    cursor: pointer;
+    background: rgb(65, 53, 47);
+    transition: .5s;
+}
+
+.subscribe .content-wrapper form button:focus {
+    outline: none;
+}
+
+
+/* ***********
+    FOOTNOTE
+   *********** */
+
+.footnote {
+    height: 10vh;
+    color: seashell;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footnote p {
+    font-size: 14px;
 }
