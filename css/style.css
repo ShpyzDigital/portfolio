@@ -284,7 +284,7 @@ h1, h2, h3, p, .divider {
    *********** */
 
 .projects {
-    height: 80vh;
+    /* height: 80vh; */
     cursor: pointer;
 }
 
@@ -462,6 +462,8 @@ h1, h2, h3, p, .divider {
     height: 35px;
     margin: 24px 0;
     border-radius: 30px;
+    font-size: 20px;
+    text-indent: 10px;
 }
 
 .subscribe .content-wrapper form .mail:focus {
